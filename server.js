@@ -20,7 +20,7 @@ const {
   updateRoom,
 } = require("./controllers/socketControllers");
 
-const { PORT, IP } = process.env;
+const { PORT } = process.env;
 const DB_URI = process.env.DB_URI.replace(
   "<password>",
   process.env.DB_PASSWORD,
