@@ -65,7 +65,7 @@ const DB_URI = process.env.DB_URI.replace(
     });
   });
 
-  httpServer.listen(PORT, IP, () => {
+  httpServer.listen(PORT, () => {
     console.log(`Server Listening on PORT ${PORT}`);
   });
 })();
