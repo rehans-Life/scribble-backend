@@ -438,6 +438,7 @@ exports.boardChange = (socket) => (roomId, data) => {
 
 exports.guessedWord = (io, socket) => async (roomId, message, time) => {
   const room = await findRoom(roomId);
+  message = message.trim();
 
   if (!room) {
     socket.emit("error", "No room found");
